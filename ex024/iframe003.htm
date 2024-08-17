@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: cursive;            
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quasi? Inventore alias tenetur assumenda similique fugit nemo iusto beatae debitis non, modi, corrupti laboriosam dolor unde delectus. Quo, sed molestiae.</p>
+
+    <ul><!--para fazer uma lista-->
+        <li><a href="pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="pag003.html" target="frame">Terceira página</a></li>
+    </ul><!--se não colocar o target="frame" a pagina carrega em outra pagina do navegador-->
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vero fuga eveniet eaque asperiores quisquam accusantium modi distinctio, ipsum exercitationem fugit velit obcaecati consequuntur cumque neque consequatur, id iste harum?</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1></p><img src='imagem/espaco.jpg'>" 
+        <p>Infelismente seu navegador não é compativel com isso.</p>
+    </iframe><!--Aqui pode colocar alem da imagem e titulo, pode colocar paragrafo e etc-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore in perspiciatis rerum asperiores eligendi assumenda, provident quae voluptas eveniet, non, quod ratione suscipit voluptatibus praesentium architecto dolor nihil veritatis corrupti!</p>
+   
+</body>
+</html>

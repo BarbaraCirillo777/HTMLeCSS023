@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de iframe</title>
+    <style>
+        iframe { /*Neste caso as css são soberanas e o que vai valer é o que esta aqui*/
+            width: 400px;
+            height: 400px;
+            border: 1px dashead black ;
+        }
+    </style>
+</head>
+<body>
+    <h1>testando o uso de um iframe></h1>
+    <p>
+      <!--  Acessando o site do <a href="http://www.cursoemvideo.com" target="_blank">CursoemVideo</a> para aprender a programar.  e agora com usodo iframe...-->
+      Acessando o site do
+      <!--Ele criou uma estrutura com o site ai-->
+      <iframe src="http://www.cursoemvideo.com" frameborder="0"  
+      height="500"><a href="http://www.cursoemvideo.com"target="black">Curso em video</a><!--Do a ate aqui é pra que se o navegador ou celular não for compativel, vai dar a opção do site direto--></iframe>
+
+      <!--O frameborder só aceita valor de 0 ou 1 e pode personalizar na css-->
+
+      para aprender a programar
+    </p>
+    <!--<p>O site do <iframe src="https://www.google.com" frameborder="0"></iframe>google tambem é muito legal</p> Ele não vai funcionar pq alguns sites bloqueiam o uso por segurança-->
+
+    O repositório da Bárbara Cirillo
+
+    <iframe src="https://barbaracirillo777.github.io/projeto-cordel" frameborder="0" height="500" width="500"></iframe>
+
+    tamebém ficou muito legal!!!!!
+
+    <!--Por padrão o iframe tem Tamanho de 300x150 usou o height-->
+    
+</body>
+</html>
