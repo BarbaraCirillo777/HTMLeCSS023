@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;/*Vai dar comprimento pros quadrados*/
+            border-collapse: collapse;/*(separate=separa as bordas eeste junta(dando o efeito de tabela)*/
+            border: 5px solid red; /*Deu cor ao redor da borda
+        }
+
+        /*tr {
+            background-color: aqua;/* Colocou cor de fundo nos quadrados*/
+        
+
+        tr.linha {
+            background-color: rgb(255, 0, 195);
+        }
+
+        td {
+            border: 1px solid black;/* Vai dicar no quadrado cada dado*/
+            padding: 8px;
+
+        }
+
+        td.dado {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--hierarquia de tabelas (simples)
+    TABLE = tabela
+        TABLE ROW = linha de tabela
+            TABLE HEADER = cabeçalho de tabela
+            TABLE DATA = dado de tabela-->
+    <table>
+        <tr><!--td é cada dado da tabela-->
+            <td>A1</td><!--Cada linha tem que declarar-->
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha"> <!--Ficou só a linha com cor-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr><!--O fechamento do /tr e /dr não é obrigatorio, poremse esquecer de colocar a abertura(a celula não existe)-->
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td class="dado">B4</td>
+            <td>C4</td>
+            Palavra sem respeitar hierarquia
+            <!--Caso coloque uma palavra aqui, vai aparecer esta paravra ou embaixo ou em cima da tabela, por não respeitar a hierarquia, tabelas são muito rigidas!!-->
+        </tr>
+        <tr>
+            <td>A5</td><!--olha como vai aparecer esta e a de baixo-->
+            <td>B5</td>
+        </tr>
+            <td>C6</td>
+    </table>        
+    
+</body>
+</html>
