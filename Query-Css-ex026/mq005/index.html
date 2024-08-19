@@ -6,8 +6,10 @@
     <title>Media Query - Menu Responsivo</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!--Isso vai colocar os 3 risquinhos de menu-->
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+
 </head>
-<body>
+<body onresize="mudouTamanho">
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i><!--tem que colocar isto e o link pra ter os risquinhos de menu-->
@@ -32,6 +34,13 @@
         </article>
     </main>
     <script>
+        function mudouTamanho() {
+            if (window.innerWidh >=768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
