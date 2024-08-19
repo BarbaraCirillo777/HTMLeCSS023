@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/*Aparelho deitado (landscape)*/
+
+body{
+    background: url(../imagem/Captura\ de\ Tela\ \(4\).png);
+    background-position: left bottom;
+}

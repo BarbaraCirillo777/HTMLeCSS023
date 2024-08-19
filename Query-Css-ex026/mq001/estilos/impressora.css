@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*estilo para impressora*/
+
+* {
+    margin: 10px;
+    padding: 10px;    
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}/*Fazendo esses estilos, quando der ctrl + p, já vai aparecer tudo certinho pra i,pressão*/
+
+menu {
+    display: none;/*O menu na impressão é retirado somente na impressora, pq pra imprimir é desnecessário, assim como pode retirar outras coisa*/     
+}
+
+article {
+    width: 100%;/*Vai ocupar a largura de 100% na impressão*/
+}
+
+article::after {
+    content: 'Esse artigo foi impresso atrvés do site www.cursoemvideo.com';/*Vai aparecer apenas na impressão, pq foi estilizado aqui apenas*/
+}
+
