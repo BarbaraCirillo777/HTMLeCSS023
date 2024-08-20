@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        div.container { /*aqui é onde vai levar os itens*/
+            background-color: lightsalmon;
+            height: 300px;
+            display: flex;/*Só de colocar isso, ele arruma a caixa*/
+            flex: row nowrap;/*é a direçõa do eixo, visualmente não muda nada*/
+            justify-content: space-around;/*A forma como vai começar a distribuição dos itens*/
+            align-items: flex-end;/* colocou lá embaixo*/
+
+
+
+        }
+
+        div.item { /*dentro da caixa*/
+            background-color: lightblue;
+            border: solid black;
+            text-align: center;/*colocou o texto no centro*/
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+
+    </div>
+</body>
+</html>

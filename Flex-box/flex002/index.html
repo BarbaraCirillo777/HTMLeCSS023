@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box  Entendendo os Eixos</title>
+    <style>
+        div.container { /*aqui é onde vai levar os itens*/
+            background-color: lightsalmon;
+
+            display: flex;/*Só de colocar isso, ele arruma a caixa*/
+            flex-direction: column-reverse;/* SÓ MUDE E VEJA AS DIFERENÇAS DE FLEX-DIRECTION!!!!!!!!!!!!!*/
+        }
+
+        div.item { /*dentro da caixa*/
+            background-color: lightblue;            
+            border: solid black;/*colocou solid, linha a linha com borda*/
+            text-align: center;/*colocou o texto no centro*/
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+
+    </div>
+</body>
+</html>
